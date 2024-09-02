@@ -156,3 +156,6 @@ h4 {
   transition: all 0.1s ease-in-out;
   transform: scaleX(1.1);
 }
+.datatable .rdt_TableBody .rdt_TableRow {
+  color: #434343; /* Row text color */
+}
