@@ -33,7 +33,7 @@ const Navbar = () => {
             setSearch(e.target.value);
           }}
         />
-        <button type="submit">Search</button>
+        <button id="btn" type="submit">Search</button>
       </form>
     </div>
   );
