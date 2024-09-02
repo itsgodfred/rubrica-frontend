@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+.App {
+  text-align: center;
+  background-color: rgb(177, 104, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 2rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0 0.5rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  height: 2rem;
+  padding: 0 0.7rem;
+  border-radius: 4px;
+  background-color: rgb(212, 212, 212);
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  transition: all 0.1s ease-in-out;
+  background-color: rgb(6, 168, 6);
+  color: white;
+}
+.rubrica {
+  height: 80%;
+  width: 65%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 3px #727272;
+}
+/*NAVBAR*/
+.Navbar {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.7rem;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  width: 23%;
+  padding: 3rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.user h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(123, 123, 123);
+}
+
+svg {
+  fill: rgb(123, 123, 123);
+}
+.search-area {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-area input {
+  width: 75%;
+}
+/*MAin*/
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  flex-grow: 1;
+  padding-right: 0.7rem;
+}
+.left {
+  background-color: blueviolet;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0;
+}
+.right {
+  background-color: white;
+  border-radius: 4px;
+}
+.contact-amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 37%;
+}
+.contact-amount svg {
+  fill: white;
+  cursor: pointer;
+}
+.amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.amount h3,
+h4 {
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+.amount h3 {
+  font-weight: 500;
+}
+#illustration {
+  height: 7rem;
+}
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 18px;
+}
+#name-input {
+  width: 7rem;
+}
+#numero-cel {
+  grid-column: span 2;
+}
+.datatable h4 {
+  font-size: 16px;
+  text-align: center;
+  padding: 10rem;
+  color: #888;
+}
+/*DATATABLE*/
+#delete {
+  height: 1.8rem;
+  cursor: pointer;
+}
+#delete:hover {
+  transition: all 0.1s ease-in-out;
+  transform: scaleX(1.1);
+}
