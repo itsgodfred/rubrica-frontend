@@ -6,7 +6,7 @@ import { GlobalContext } from "./GlobalState";
 
 const Main = () => {
   const [contacts, setContacts] = useState([]);
-  const { setnewContact } = useContext(GlobalContext);
+  const { newContact, setnewContact } = useContext(GlobalContext);
   const [info, setInfo] = useState({
     nome: "",
     cognome: "",
@@ -14,7 +14,7 @@ const Main = () => {
   });
   const loadContacts = async () => {
     try {
-      const response = await fetch("https://rubrica-server.vercel.app/contacts");
+      const response = await fetch("http://localhost:4000/contacts");
 
       const jsonData = await response.json();
       setContacts(jsonData);
@@ -32,10 +32,18 @@ const Main = () => {
     loadContacts();
   }, []);
 
+  useEffect(() => {
+    if (newContact) {
+      loadContacts();
+      console.log(newContact);
+      setnewContact(false);
+    }
+  }, [newContact, setnewContact]);
+
   const addContact = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://rubrica-server.vercel.app/addcontact", {
+      const response = await fetch("http://localhost:4000/addcontact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(info),
@@ -121,7 +129,9 @@ const Main = () => {
               }
             />
           </div>
-          <button id="btn" type="submit">Add</button>
+          <button id="btn" type="submit">
+            Add
+          </button>
         </form>
       </div>
       <div className="right">
