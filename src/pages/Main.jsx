@@ -121,7 +121,7 @@ const Main = () => {
               }
             />
           </div>
-          <button type="submit">Add</button>
+          <button id="btn" type="submit">Add</button>
         </form>
       </div>
       <div className="right">
