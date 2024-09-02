@@ -11,7 +11,7 @@ const Datatable = () => {
 
   const loadjobs = async () => {
     try {
-      const response = await fetch("http://localhost:4000/contacts");
+      const response = await fetch("https://rubrica-server.vercel.app/contacts");
 
       const jsonData = await response.json();
       console.log(jsonData);
@@ -30,7 +30,7 @@ const Datatable = () => {
   const deleteContact = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/deletecontact/${id}`,
+        `https://rubrica-server.vercel.app/deletecontact/${id}`,
         {
           method: "DELETE",
         }
