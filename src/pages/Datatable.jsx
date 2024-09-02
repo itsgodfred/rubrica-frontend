@@ -9,9 +9,9 @@ const Datatable = () => {
   const [contacts, setContacts] = useState([]);
   const [record, setRecord] = useState(contacts);
 
-  const loadjobs = async () => {
+  const loadContacts = async () => {
     try {
-      const response = await fetch("https://rubrica-server.vercel.app/contacts");
+      const response = await fetch("http://localhost:4000/contacts");
 
       const jsonData = await response.json();
       console.log(jsonData);
@@ -30,14 +30,15 @@ const Datatable = () => {
   const deleteContact = async (id) => {
     try {
       const response = await fetch(
-        `https://rubrica-server.vercel.app/deletecontact/${id}`,
+        `http://localhost:4000/deletecontact/${id}`,
         {
           method: "DELETE",
         }
       );
       const jsonData = await response.json();
       toast.success(jsonData.message);
-      loadjobs();
+      loadContacts();
+      setnewContact(true);
     } catch (err) {
       console.error("Failed to delete contact:", err);
     }
@@ -55,13 +56,13 @@ const Datatable = () => {
   }, [globalData]);
 
   useEffect(() => {
-    loadjobs();
+    loadContacts();
   }, []);
 
   /*AGGIORNARE CONTACTS QUANDO VIENE AGGIUNTO UNO NUOVO*/
   useEffect(() => {
     if (newContact) {
-      loadjobs();
+      loadContacts();
       console.log(newContact);
       setnewContact(false);
     }
