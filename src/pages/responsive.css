@@ -45,7 +45,6 @@
     flex-direction: column;
     height: calc(100vh - 8rem);
     font-size: 7px;
-    padding: 0 2.5rem;
   }
 
   .datatable .rdt_Table {
@@ -57,6 +56,9 @@
   .rdt_TableCol,
   .rdt_TableCell {
     height: 4.4rem;
+  }
+  .rdt_TableCol{
+    justify-content: center;
   }
   .float {
     display: flex;
