@@ -70,7 +70,7 @@ svg {
   fill: rgb(123, 123, 123);
 }
 .search-area {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
 }
@@ -94,6 +94,7 @@ svg {
   justify-content: space-around;
   align-items: center;
   padding: 3rem 0;
+  transition: all 3s ease-in-out;
 }
 .right {
   background-color: white;
@@ -106,7 +107,8 @@ svg {
   align-items: center;
   width: 37%;
 }
-.contact-amount svg {
+.contact-amount svg,
+.float svg {
   fill: white;
   cursor: pointer;
 }
@@ -156,6 +158,55 @@ h4 {
   transition: all 0.1s ease-in-out;
   transform: scaleX(1.1);
 }
+.datatable {
+  color: #727272;
+}
+/* Custom style for table rows */
 .datatable .rdt_TableBody .rdt_TableRow {
-  color: #434343; 
+  color: #434343; /* Row text color */
+}
+
+.float {
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: blueviolet;
+  display: none;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+#arrow {
+  width: 2rem;
+}
+.float-amount {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+@keyframes slideIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+.slideIn {
+  animation: slideIn 0.3s ease-in-out forwards;
+}
+@keyframes slideOut {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+.slideOut {
+  animation: slideOut 0.3s ease-in-out forwards;
 }
