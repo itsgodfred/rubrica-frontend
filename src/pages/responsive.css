@@ -49,13 +49,14 @@
 
   .datatable .rdt_Table {
     height: calc(100dvh - 8rem);
+    overflow-y: scroll;
   }
   .hZZlND {
     overflow: hidden !important;
   }
   .rdt_TableCol,
   .rdt_TableCell {
-    height: 4rem;
+    height: 4.4rem;
      justify-content: center;
   }
   .float {
