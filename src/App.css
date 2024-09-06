@@ -7,7 +7,7 @@ body {
 .App {
   text-align: center;
   background-color: rgb(177, 104, 255);
-  height: 100vdh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
