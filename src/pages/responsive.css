@@ -60,6 +60,9 @@
   .float {
     display: flex;
   }
+  .datatable h4{
+    padding-top:0;
+  }
 }
 @media (max-width: 770px) {
   .user h3 {
