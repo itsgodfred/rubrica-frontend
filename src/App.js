@@ -1,4 +1,5 @@
 import "./App.css";
+import "./pages/responsive.css";
 import Navbar from "./pages/Navbar";
 import Main from "./pages/Main";
 import { GlobalProvider } from "./pages/GlobalState";
