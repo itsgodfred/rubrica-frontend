@@ -100,7 +100,7 @@ const Datatable = () => {
         data={record}
         noDataComponent={<h4>No Contacts Stored</h4>}
         pagination
-        paginationPerPage={6}
+        paginationPerPage={7}
         paginationRowsPerPageOptions={[]}
       ></DataTable>
     </div>
