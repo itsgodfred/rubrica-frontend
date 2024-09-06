@@ -40,11 +40,12 @@
   }
   .datatable {
     height: 100%;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 8rem);
     font-size: 7px;
+    padding: 0 2.5rem;
   }
 
   .datatable .rdt_Table {
