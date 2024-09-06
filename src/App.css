@@ -196,7 +196,7 @@ h4 {
   }
 }
 .slideIn {
-  animation: slideIn 0.4s ease-in-out forwards;
+  animation: slideIn 0.4s linear forwards;
 }
 @keyframes slideOut {
   from {
@@ -207,5 +207,5 @@ h4 {
   }
 }
 .slideOut {
-  animation: slideOut 0.4s ease-in-out forwards;
+  animation: slideOut 0.4s linear forwards;
 }
