@@ -48,7 +48,7 @@
   }
 
   .datatable .rdt_Table {
-    height: calc(90vh - 8rem);
+    height: calc(100vh - 8rem);
   }
   .hZZlND {
     overflow: hidden !important;
