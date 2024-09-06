@@ -17,7 +17,7 @@ const Main = () => {
   });
   const loadContacts = async () => {
     try {
-      const response = await fetch("http://localhost:4000/contacts");
+      const response = await fetch("https://rubrica-server.vercel.app/contacts");
 
       const jsonData = await response.json();
       setContacts(jsonData);
@@ -46,7 +46,7 @@ const Main = () => {
   const addContact = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/addcontact", {
+      const response = await fetch("https://rubrica-server.vercel.app/addcontact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(info),
