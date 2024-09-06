@@ -1,0 +1,112 @@
+@media (max-width: 1250px) {
+  .rubrica {
+    width: 85%;
+  }
+}
+@media (max-width: 950px) {
+  .rubrica {
+    width: 95%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 830px) {
+  .rubrica {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .Main {
+    display: flex;
+    position: relative;
+    padding: 0;
+  }
+  .left {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+    width: 100%;
+    left: 100%;
+    border-radius: 0;
+  }
+  .contact-amount {
+    display: none;
+  }
+  .right {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    position: relative;
+    top: 4rem;
+  }
+  .datatable {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+    font-size: 7px;
+  }
+
+  .datatable .rdt_Table {
+    height: calc(90vh - 8rem);
+  }
+  .hZZlND {
+    overflow: hidden !important;
+  }
+  .rdt_TableCol,
+  .rdt_TableCell {
+    height: 4.4rem;
+  }
+  .float {
+    display: flex;
+  }
+}
+@media (max-width: 770px) {
+  .user h3 {
+    display: none;
+  }
+  .search-area {
+    width: 65%;
+  }
+  .user {
+    width: auto;
+    padding: 2rem;
+  }
+}
+@media (max-width: 610px) {
+  .search-area {
+    width: 55%;
+  }
+  .search-area input {
+    width: 65%;
+  }
+}
+@media (max-width: 541px) {
+  .rdt_TableCol,
+  .rdt_TableCell {
+    font-size: 11px;
+  }
+  #arrow {
+    width: 1.8rem;
+  }
+  #delete {
+    height: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .datatable .rdt_TableCol:nth-child(2) {
+    display: none;
+  }
+  .rdt_TableCell:nth-child(2) {
+    display: none;
+  }
+
+  .search-area {
+    width: 78%;
+  }
+}
+@media (max-width: 400px) {
+  .search-area {
+    width: 85%;
+  }
+}
