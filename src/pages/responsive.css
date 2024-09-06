@@ -43,12 +43,12 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 8rem);
+    height: calc(100vdh - 8rem);
     font-size: 7px;
   }
 
   .datatable .rdt_Table {
-    height: calc(100vh - 8rem);
+    height: calc(100vdh - 8rem);
   }
   .hZZlND {
     overflow: hidden !important;
