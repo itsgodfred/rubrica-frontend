@@ -56,9 +56,7 @@
   .rdt_TableCol,
   .rdt_TableCell {
     height: 4.4rem;
-  }
-  .rdt_TableCol{
-    justify-content: center;
+     justify-content: center;
   }
   .float {
     display: flex;
