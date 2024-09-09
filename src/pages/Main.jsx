@@ -9,13 +9,13 @@ import right from "./images/right.svg";
 const Main = () => {
   const [contacts, setContacts] = useState([]);
   const [currentImage, setCurrentImage] = useState(add);
-  const { newContact, setnewContact } = useContext(GlobalContext);
+  const { newContact, setnewContact, contactsize } = useContext(GlobalContext);
   const [info, setInfo] = useState({
     nome: "",
     cognome: "",
     numero: "",
   });
-  const loadContacts = async () => {
+  /*const loadContacts = async () => {
     try {
       const response = await fetch("https://rubrica-server.vercel.app/contacts");
 
@@ -34,7 +34,7 @@ const Main = () => {
       loadContacts();
       console.log(newContact);
     }
-  }, [newContact, setnewContact]);
+  }, [newContact, setnewContact]);*/
 
   const addContact = async (e) => {
     e.preventDefault();
@@ -95,7 +95,7 @@ const Main = () => {
           >
             <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2h11A2.5 2.5 0 0 1 20 4.5v14.25a.75.75 0 0 1-.75.75H5.5a1 1 0 0 0 1 1h12.75a.75.75 0 0 1 0 1.5H6.5A2.5 2.5 0 0 1 4 19.5zM14 8a2 2 0 1 0-4 0a2 2 0 0 0 4 0m1.5 4.5A1.5 1.5 0 0 0 14 11h-4a1.5 1.5 0 0 0-1.5 1.5c0 1.25 1 2.5 3.5 2.5s3.5-1.255 3.5-2.5" />
           </svg>
-          <h4>{contacts.length} contacts</h4>
+          <h4>{contactsize} contacts</h4>
         </div>
         <img onClick={toggleImage} id="arrow" src={currentImage} alt="" />
       </div>
@@ -114,7 +114,7 @@ const Main = () => {
           </svg>
           <div className="amount">
             <h3>All contacts</h3>
-            <h4>{contacts.length} contacts</h4>
+            <h4>{contactsize} contacts</h4>
           </div>
         </div>
         <img id="illustration" src={image} alt="" />
