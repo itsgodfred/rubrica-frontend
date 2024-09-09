@@ -6,10 +6,11 @@ export const GlobalProvider = ({ children }) => {
     useState(""); /*VARIABILE GLOBALE PER SEARCH*/
   const [newContact, setnewContact] =
     useState(false); /*VARIABILE GLOBALE PER AGGIORNAMENTO DEI CONTATTI*/
+  const [contactsize, setContactSize] = useState(0);
 
   return (
     <GlobalContext.Provider
-      value={{ globalData, setGlobalData, newContact, setnewContact }}
+      value={{ globalData, setGlobalData, newContact, setnewContact, contactsize, setContactSize, }}
     >
       {children}
     </GlobalContext.Provider>
