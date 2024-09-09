@@ -17,11 +17,6 @@ const Datatable = () => {
       console.log(jsonData);
       setContacts(jsonData);
       setRecord(jsonData);
-      if (jsonData) {
-        console.log("Account found:", jsonData);
-      } else {
-        console.log("Account not found");
-      }
     } catch (err) {
       console.error(err.message);
     }
