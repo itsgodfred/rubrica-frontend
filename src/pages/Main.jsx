@@ -9,7 +9,7 @@ import right from "./images/right.svg";
 const Main = () => {
   const [contacts, setContacts] = useState([]);
   const [currentImage, setCurrentImage] = useState(add);
-  const { newContact, setnewContact } = useContext(GlobalContext);
+  const { newContact } = useContext(GlobalContext);
   const [info, setInfo] = useState({
     nome: "",
     cognome: "",
@@ -33,7 +33,6 @@ const Main = () => {
     if (newContact) {
       loadContacts();
       console.log(newContact);
-      //setnewContact(false);
     }
   }, [newContact, setnewContact]);
 
