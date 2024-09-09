@@ -33,7 +33,7 @@ const Main = () => {
     if (newContact) {
       loadContacts();
       console.log(newContact);
-      setnewContact(false);
+      //setnewContact(false);
     }
   }, [newContact, setnewContact]);
 
