@@ -102,7 +102,7 @@ const Main = () => {
           <div className="inputs">
             <input
               type="text"
-              placeholder="Nome"
+              placeholder="Name"
               id="name-input"
               value={info.nome}
               onChange={(e) =>
@@ -114,7 +114,7 @@ const Main = () => {
             />
             <input
               type="text"
-              placeholder="Cognome"
+              placeholder="Surname"
               id="name-input"
               value={info.cognome}
               onChange={(e) =>
