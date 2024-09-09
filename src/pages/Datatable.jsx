@@ -5,7 +5,7 @@ import { GlobalContext } from "./GlobalState";
 import { toast } from "react-hot-toast";
 
 const Datatable = () => {
-  const { globalData, newContact, setnewContact } = useContext(GlobalContext);
+  const { globalData, newContact, setnewContact, setContactSize } = useContext(GlobalContext);
   const [contacts, setContacts] = useState([]);
   const [record, setRecord] = useState(contacts);
 
@@ -17,6 +17,7 @@ const Datatable = () => {
       console.log(jsonData);
       setContacts(jsonData);
       setRecord(jsonData);
+      setContactSize(jsonData.length);
     } catch (err) {
       console.error(err.message);
     }
