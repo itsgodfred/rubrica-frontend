@@ -21,12 +21,6 @@ const Main = () => {
 
       const jsonData = await response.json();
       setContacts(jsonData);
-
-      if (jsonData) {
-        console.log("Account found:", jsonData);
-      } else {
-        console.log("Account not found");
-      }
     } catch (err) {
       console.error(err.message);
     }
