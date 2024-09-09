@@ -15,26 +15,6 @@ const Main = () => {
     cognome: "",
     numero: "",
   });
-  /*const loadContacts = async () => {
-    try {
-      const response = await fetch("https://rubrica-server.vercel.app/contacts");
-
-      const jsonData = await response.json();
-      setContacts(jsonData);
-    } catch (err) {
-      console.error(err.message);
-    }
-  };
-  useEffect(() => {
-    loadContacts();
-  }, []);
-
-  useEffect(() => {
-    if (newContact) {
-      loadContacts();
-      console.log(newContact);
-    }
-  }, [newContact, setnewContact]);*/
 
   const addContact = async (e) => {
     e.preventDefault();
