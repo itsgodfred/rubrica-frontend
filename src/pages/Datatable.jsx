@@ -33,7 +33,6 @@ const Datatable = () => {
       );
       const jsonData = await response.json();
       toast.success(jsonData.message);
-      loadContacts();
       setnewContact(true);
     } catch (err) {
       console.error("Failed to delete contact:", err);
